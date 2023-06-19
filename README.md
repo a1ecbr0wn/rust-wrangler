@@ -18,6 +18,7 @@ To use this image in a devcontainer you should be able to use the following `dev
 {
     "name": "Rust-Wrangler",
     "image": "alecbrown/rust-wrangler",
+    "forwardPorts": [8976],
     "postCreateCommand": "rustc --version"
 }
 ```
