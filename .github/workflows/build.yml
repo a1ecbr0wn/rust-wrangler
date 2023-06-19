@@ -41,7 +41,7 @@ jobs:
       - name: Build, tag and push dockerfile to hub.docker.com
         uses: docker/build-push-action@v3
         with:
-          platforms: linux/amd64,linux/arm/v7,linux/arm64/v8
+          platforms: linux/amd64,linux/arm64/v8
           push: true
           tags: |
             alecbrown/rust-wrangler:${{ env.DATETAG}}
