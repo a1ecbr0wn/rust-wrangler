@@ -1,6 +1,6 @@
 # rust-wrangler Dockerfile
 
-[![Docker Image CI](https://github.com/a1ecbr0wn/rust-wrangler/actions/workflows/docker-image.yml/badge.svg)](https://github.com/a1ecbr0wn/rust-wrangler/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/a1ecbr0wn/rust-wrangler/actions/workflows/build.yml/badge.svg)](https://github.com/a1ecbr0wn/rust-wrangler/actions/workflows/build.yml)
 
 Dockerfile combination of [rust:latest](https://github.com/rust-lang/docker-rust) and node.
 
