@@ -19,5 +19,3 @@ RUN npm install -g wrangler; \
     cargo --version; \
     rustc --version; \
     wrangler --version;
-
-CMD ["fish"]
