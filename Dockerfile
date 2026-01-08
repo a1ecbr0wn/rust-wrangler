@@ -7,7 +7,8 @@ COPY --from=rust /usr/local/rustup/ /usr/local/rustup/
 
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
-    PATH=/usr/local/cargo/bin:$PATH
+    PATH=/usr/local/cargo/bin:$PATH \
+    SHELL=/usr/bin/fish
 
 RUN apt-get update; \
     apt-get install -y fish; \
@@ -18,5 +19,3 @@ RUN npm install -g wrangler; \
     cargo --version; \
     rustc --version; \
     wrangler --version;
-
-CMD ["fish"]
