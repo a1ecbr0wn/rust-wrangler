@@ -1,6 +1,6 @@
-FROM rust AS rust
+FROM rust:trixie AS rust
 
-FROM node
+FROM node:trixie
 
 COPY --from=rust /usr/local/cargo/ /usr/local/cargo/
 COPY --from=rust /usr/local/rustup/ /usr/local/rustup/
