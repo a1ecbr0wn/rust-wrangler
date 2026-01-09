@@ -12,9 +12,11 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN apt-get update; \
     apt-get install -y fish; \
-    chsh -s $(which fish);
-
-RUN npm install -g wrangler; \
+    chsh -s $(which fish); \
+    npm install -g wrangler; \
+    rustup component add rustfmt; \
+    rustup component add clippy; \
+    rustup component add rust-src; \
     rustup --version; \
     cargo --version; \
     rustc --version; \
