@@ -16,8 +16,7 @@ RUN apt-get update; \
     npm install -g wrangler; \
     rustup component add rustfmt; \
     rustup component add clippy; \
-    rustup component add rust-src; \
     rustup --version; \
-    cargo --version; \
     rustc --version; \
+    cargo --version; \
     wrangler --version;
